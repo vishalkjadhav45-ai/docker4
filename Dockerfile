@@ -1,2 +1,2 @@
-FROM nginx:latest
-COPY . /usr/share/nginx/html
+FROM tomcat:9
+COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
